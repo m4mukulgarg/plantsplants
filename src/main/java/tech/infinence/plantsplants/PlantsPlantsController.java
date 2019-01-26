@@ -2,6 +2,7 @@ package tech.infinence.plantsplants;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,8 +19,10 @@ public class PlantsPlantsController {
 	 * @return the 'start' page
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET)
-	public String read() {
+    public String read(Model model) {
+
 		SpecimenDTO specimenDTO = iSpecimenService.fetchById(43);
+        model.addAttribute("specimenDTO", specimenDTO);
 		return "start";
 	}
 
