@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 import tech.infinence.plantsplants.service.ISpecimenService;
 
@@ -37,11 +38,16 @@ public class PlantsPlantsController {
 
 	/**
 	 * Handles the /start endpoint
-	 * @return the 'start' page
+	 * @return ModelAndView object with "start" page
 	 */
 	@RequestMapping(value = "/start", method = RequestMethod.GET, params = {"loyalty=silver"})
-	public String readSilver() {
-		return "start";
+	public ModelAndView readSilver() {
+		SpecimenDTO specimenDTO = iSpecimenService.fetchById(43);
+		specimenDTO.setSpecimenId(34);
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("start");
+		modelAndView.addObject("specimenDTO", specimenDTO);
+		return modelAndView;
 	}
 
 	/**
