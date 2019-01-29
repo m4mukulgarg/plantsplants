@@ -23,6 +23,7 @@ public class SpecimenServiceStub implements ISpecimenService {
 	@Override
 	public void save(SpecimenDTO specimenDTO) {
 
+
 	}
 
 	@Override

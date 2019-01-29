@@ -1,10 +1,22 @@
 package tech.infinence.plantsplants.dto;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SpecimenDTO {
 	private int specimenId;
 	private String latitude;
 	private String longitude;
 	private String description;
+	private int plantId;
+
+	public int getPlantId() {
+		return plantId;
+	}
+
+	public void setPlantId(int plantId) {
+		this.plantId = plantId;
+	}
 
 	@Override
 	public String toString() {
