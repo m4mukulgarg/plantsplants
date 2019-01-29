@@ -13,13 +13,45 @@ public class PlantsPlantsController {
 	@Autowired
 	private ISpecimenService iSpecimenService;
 
-
+	/**
+	 * Handles /rb endpoint.
+	 *
+	 * @param model
+	 * @return specimenDTO in JSON
+	 */
 	@GetMapping("/rb")
 	@ResponseBody
 	public SpecimenDTO rBody(Model model) {
 		SpecimenDTO specimenDTO = iSpecimenService.fetchById(43);
 		model.addAttribute("specimenDTO", specimenDTO);
 		return specimenDTO;
+	}
+
+	/**
+	 * Handles /editSpecimen endpoint to demonstrate the @RequestParam annotation for post method.
+	 * Other attributes for @RequestParam are
+	 * required = true/false (true by default)
+	 * defaultValue = "" (String value)
+	 *
+	 * @param model
+	 * @param latitude
+	 * @param id
+	 * @return
+	 */
+	@PostMapping("/editSpecimen")
+	public String addPost(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
+		SpecimenDTO specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
+		specimenDTO.setLatitude(latitude);
+		model.addAttribute("specimenDTO", specimenDTO);
+		return "/start";
+	}
+
+	@GetMapping("/editSpecimen")
+	public String add(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
+		SpecimenDTO specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
+		specimenDTO.setLatitude(latitude);
+		model.addAttribute("specimenDTO", specimenDTO);
+		return "/start";
 	}
 
 	/**
