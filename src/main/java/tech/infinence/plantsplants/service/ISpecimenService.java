@@ -1,6 +1,9 @@
 package tech.infinence.plantsplants.service;
 
+import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
+
+import java.util.List;
 
 /**
  * CRUD operations for specimens
@@ -23,4 +26,6 @@ public interface ISpecimenService {
 	 * @param specimenDTO
 	 */
 	void save(SpecimenDTO specimenDTO);
+
+	List<PlantDTO> fetchPlants(String s);
 }
