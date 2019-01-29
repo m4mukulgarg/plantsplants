@@ -6,6 +6,16 @@ public class SpecimenDTO {
 	private String longitude;
 	private String description;
 
+	@Override
+	public String toString() {
+		return "SpecimenDTO{" +
+				"specimenId=" + specimenId +
+				", latitude='" + latitude + '\'' +
+				", longitude='" + longitude + '\'' +
+				", description='" + description + '\'' +
+				'}';
+	}
+
 	public int getSpecimenId() {
 		return specimenId;
 	}
