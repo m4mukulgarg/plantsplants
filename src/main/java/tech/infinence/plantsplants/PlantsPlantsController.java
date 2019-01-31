@@ -13,6 +13,8 @@ public class PlantsPlantsController {
 	@Autowired
 	private ISpecimenService iSpecimenService;
 
+	@Autowired
+	SpecimenDTO specimenDTO;
 	/**
 	 * Handles /rb endpoint.
 	 *
@@ -103,10 +105,16 @@ public class PlantsPlantsController {
 	 * @return the 'start' page
 	 */
 	@PostMapping("/start")
-	public String create() {
+	public String create(Model model) {
+		model.addAttribute("specimenDTO", specimenDTO);
 		return "start";
 	}
 
+	@PostMapping("/savespecimen")
+	public String saveSpecimen(SpecimenDTO specimenDTO) {
+		specimenDTO.setPlantId(13);
+		return "start";
+	}
 
 	/**
 	 * Handles the / endpoint

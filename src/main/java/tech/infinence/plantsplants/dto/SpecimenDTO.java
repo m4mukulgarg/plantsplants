@@ -12,6 +12,20 @@ public class SpecimenDTO {
 		return getPlantId() == that.getPlantId();
 	}
 
+	/**
+	 * @return
+	 */
+	@Override
+	public String toString() {
+		return "SpecimenDTO{" +
+				"specimenId=" + specimenId +
+				", latitude='" + latitude + '\'' +
+				", longitude='" + longitude + '\'' +
+				", description='" + description + '\'' +
+				", plantId=" + plantId +
+				'}';
+	}
+
 	private int specimenId;
 	private String latitude;
 	private String longitude;
@@ -24,16 +38,6 @@ public class SpecimenDTO {
 
 	public void setPlantId(int plantId) {
 		this.plantId = plantId;
-	}
-
-	@Override
-	public String toString() {
-		return "SpecimenDTO{" +
-				"specimenId=" + specimenId +
-				", latitude='" + latitude + '\'' +
-				", longitude='" + longitude + '\'' +
-				", description='" + description + '\'' +
-				'}';
 	}
 
 	public int getSpecimenId() {
