@@ -1,5 +1,6 @@
 package tech.infinence.plantsplants.service;
 
+import tech.infinence.plantsplants.dao.ISpecimenDAO;
 import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 
@@ -12,20 +13,13 @@ import java.util.List;
  */
 public interface ISpecimenService {
 
-	/**
-	 * Get specimens from persistence layer.
-	 *
-	 * @param id a unique lookup
-	 * @return a specimen with matching id
-	 */
+	ISpecimenDAO getSpecimenDAO();
+
+	void setSpecimenDAO(ISpecimenDAO specimenDAO);
+
 	SpecimenDTO fetchById(int id);
 
-	/**
-	 * Persist the given DTO
-	 *
-	 * @param specimenDTO
-	 */
-	void save(SpecimenDTO specimenDTO);
+	boolean save(SpecimenDTO specimenDTO) throws Exception;
 
-	List<PlantDTO> fetchPlants(String s);
+	List<PlantDTO> fetchPlants(String searchTerm);
 }

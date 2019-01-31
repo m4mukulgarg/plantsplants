@@ -4,6 +4,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SpecimenDTO {
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof SpecimenDTO)) return false;
+		SpecimenDTO that = (SpecimenDTO) o;
+		return getPlantId() == that.getPlantId();
+	}
+
 	private int specimenId;
 	private String latitude;
 	private String longitude;

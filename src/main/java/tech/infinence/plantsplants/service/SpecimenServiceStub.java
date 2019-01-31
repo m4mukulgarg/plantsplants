@@ -1,6 +1,7 @@
 package tech.infinence.plantsplants.service;
 
 import org.springframework.stereotype.Component;
+import tech.infinence.plantsplants.dao.ISpecimenDAO;
 import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 
@@ -9,6 +10,19 @@ import java.util.List;
 
 @Component
 public class SpecimenServiceStub implements ISpecimenService {
+
+
+	private ISpecimenDAO specimenDAO;
+
+	@Override
+	public ISpecimenDAO getSpecimenDAO() {
+		return specimenDAO;
+	}
+
+	@Override
+	public void setSpecimenDAO(ISpecimenDAO specimenDAO) {
+		this.specimenDAO = specimenDAO;
+	}
 
 	@Override
 	public SpecimenDTO fetchById(int id) {
@@ -20,10 +34,15 @@ public class SpecimenServiceStub implements ISpecimenService {
 		return specimenDTO;
 	}
 
+	/**
+	 * @param specimenDTO
+	 * @return
+	 * @throws Exception
+	 */
 	@Override
-	public void save(SpecimenDTO specimenDTO) {
-
-
+	public boolean save(SpecimenDTO specimenDTO) throws Exception {
+		boolean res = specimenDAO.save(specimenDTO);
+		return res;
 	}
 
 	@Override

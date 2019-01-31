@@ -1,10 +1,14 @@
 package tech.infinence.plantsplants;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
+import tech.infinence.plantsplants.dao.ISpecimenDAO;
 import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 import tech.infinence.plantsplants.service.ISpecimenService;
@@ -18,11 +22,23 @@ import static org.junit.Assert.*;
 @SpringBootTest
 public class SpecimenServiceTest {
 
+	@MockBean
+	private ISpecimenDAO specimenDAO;
+
 	@Autowired
 	ISpecimenService specimenService;
+
 	@Autowired
 	SpecimenDTO specimen;
 	List<PlantDTO> plants = new ArrayList<PlantDTO>();
+
+	@Before
+	public void setup() throws Exception {
+		SpecimenDTO specimen = new SpecimenDTO();
+		specimenService.setSpecimenDAO(specimenDAO);
+		Mockito.when(specimenDAO.save(specimen)).thenReturn(true);
+		specimenService.setSpecimenDAO(specimenDAO);
+	}
 
 	@Test
 	public void fetchPlants_validateNoResultsForJunkData() {
@@ -49,15 +65,15 @@ public class SpecimenServiceTest {
 
 		PlantDTO plantDTO = plants.get(0);
 		specimen.setPlantId(plantDTO.getGuid());
-		specimen.setDescription("Moine bootiful spechimen");
+		specimen.setDescription("Moine bootiful specimen");
 
 	}
 
 	private void thenSpecimenIsSaved() {
 		try {
-			specimenService.save(specimen);
-			//passes if control is here
-			assertTrue(true);
+			boolean res = specimenService.save(specimen);
+			//p asses if control is here
+			assertTrue(res);
 		} catch (Exception e) {
 			//failed if control gets here
 			fail();
