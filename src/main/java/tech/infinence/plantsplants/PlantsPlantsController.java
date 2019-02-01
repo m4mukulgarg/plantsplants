@@ -122,6 +122,6 @@ public class PlantsPlantsController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {
-		return "start";
+		return "start.html";
 	}
 }
