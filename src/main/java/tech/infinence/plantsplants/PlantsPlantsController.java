@@ -3,13 +3,20 @@ package tech.infinence.plantsplants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 import tech.infinence.plantsplants.service.ISpecimenService;
 
+import java.util.Map;
+
 @Controller //Specify how to respond
 public class PlantsPlantsController {
+	private static final String SPECIMEN_DTO = "specimenDTO";
+	private static final String START = "start";
 	@Autowired
 	private ISpecimenService iSpecimenService;
 
@@ -24,8 +31,8 @@ public class PlantsPlantsController {
 	@GetMapping("/rb")
 	@ResponseBody
 	public SpecimenDTO rBody(Model model) {
-		SpecimenDTO specimenDTO = iSpecimenService.fetchById(43);
-		model.addAttribute("specimenDTO", specimenDTO);
+		specimenDTO = iSpecimenService.fetchById(43);
+		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return specimenDTO;
 	}
 
@@ -42,17 +49,17 @@ public class PlantsPlantsController {
 	 */
 	@PostMapping("/editSpecimen")
 	public String addPost(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		SpecimenDTO specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
+		specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
 		specimenDTO.setLatitude(latitude);
-		model.addAttribute("specimenDTO", specimenDTO);
+		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return "/start";
 	}
 
 	@GetMapping("/editSpecimen")
 	public String add(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		SpecimenDTO specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
+		specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
 		specimenDTO.setLatitude(latitude);
-		model.addAttribute("specimenDTO", specimenDTO);
+		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return "/start";
 	}
 
@@ -60,34 +67,34 @@ public class PlantsPlantsController {
 	 * Handles the /start endpoint
 	 * @return the 'start' page
 	 */
-	@RequestMapping(value = "/start", method = RequestMethod.GET)
+	@GetMapping("/start")
     public String read(Model model) {
 
-		SpecimenDTO specimenDTO = iSpecimenService.fetchById(43);
-        model.addAttribute("specimenDTO", specimenDTO);
-		return "start";
+		specimenDTO = iSpecimenService.fetchById(43);
+		model.addAttribute(SPECIMEN_DTO, specimenDTO);
+		return START;
 	}
 
 	/**
 	 * Handles the /start endpoint
 	 * @return the 'start' page
 	 */
-	@RequestMapping(value = "/start", method = RequestMethod.GET, params = {"loyalty=blue"})
+	@GetMapping(value = "/start", params = {"loyalty=blue"})
 	public String readBlue() {
-		return "start";
+		return START;
 	}
 
 	/**
 	 * Handles the /start endpoint
-	 * @return ModelAndView object with "start" page
+	 * @return ModelAndView object with START page
 	 */
-	@RequestMapping(value = "/start", method = RequestMethod.GET, params = {"loyalty=silver"})
+	@GetMapping(value = "/start", params = {"loyalty=silver"})
 	public ModelAndView readSilver() {
-		SpecimenDTO specimenDTO = iSpecimenService.fetchById(43);
+		specimenDTO = iSpecimenService.fetchById(43);
 		specimenDTO.setSpecimenId(34);
 		ModelAndView modelAndView = new ModelAndView();
-		modelAndView.setViewName("start");
-		modelAndView.addObject("specimenDTO", specimenDTO);
+		modelAndView.setViewName(START);
+		modelAndView.addObject(SPECIMEN_DTO, specimenDTO);
 		return modelAndView;
 	}
 
@@ -95,9 +102,9 @@ public class PlantsPlantsController {
 	 * Handles the /start endpoint
 	 * @return the 'start' page
 	 */
-	@RequestMapping(value = "/start", method = RequestMethod.GET, headers = {"Content-Type=text/json"})
+	@GetMapping(value = "/start", headers = {"Content-Type=text/json"})
 	public String readJson() {
-		return "start";
+		return START;
 	}
 
 	/**
@@ -106,21 +113,30 @@ public class PlantsPlantsController {
 	 */
 	@PostMapping("/start")
 	public String create(Model model) {
-		model.addAttribute("specimenDTO", specimenDTO);
-		return "start";
+		model.addAttribute(SPECIMEN_DTO, specimenDTO);
+		return START;
 	}
 
 	@PostMapping("/savespecimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
 		specimenDTO.setPlantId(13);
-		return "start";
+		return START;
+	}
+
+	@ResponseBody
+	@PostMapping("/searchspecimen")
+	public String searchSpecimen(@RequestParam(value = "searchTerm", required = false) String searchTerm, @RequestParam Map paramMap) {
+
+		return "First term: " + searchTerm + "<br/>" +
+				"Map:<br/>" +
+				paramMap;
 	}
 
 	/**
 	 * Handles the / endpoint
 	 * @return the 'start' page
 	 */
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@GetMapping("/")
 	public String index() {
 		return "start.html";
 	}

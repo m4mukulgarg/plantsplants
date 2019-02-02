@@ -55,7 +55,7 @@ public class SpecimenServiceTest {
 	}
 
 	private void thenMyPlantDiaryReturnsEasternRedbud() {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 		boolean redbudFound = false;
 		for (PlantDTO p : plants) {
 			if (p.getCommon().contains("Eastern Redbud")) {
@@ -66,7 +66,7 @@ public class SpecimenServiceTest {
 	}
 
 	private void whenTheUserSearchesForCercis() {
-		// TODO Auto-generated method stub
+		// Auto-generated method stub
 		plants = specimenService.fetchPlants("Eastern Redbud");
 	}
 

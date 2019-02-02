@@ -1,5 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.thymeleaf.org"> <!-- xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns:th="http://www.thymeleaf.org">
+
+<!-- xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html"
@@ -30,6 +32,15 @@
     <button name="submit" type="submit" value="0">Submit</button>
 
 </form>
+
+
+<form action="#" method="POST" th:action="@{/searchspecimen}">
+    <label>Search Term: </label><input name="searchTerm" type="text"/><br/>
+    <label>Second Search Term: </label><input name="secondSearchTerm" type="text"/><br/>
+    <button name="submit" type="submit" value="0">Search</button>
+
+</form>
+
 
 </body>
 </html>
