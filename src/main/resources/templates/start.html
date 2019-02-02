@@ -1,14 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns:th="http://www.thymeleaf.org">
 
-<!-- xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui"
-	xmlns:mj="http://mojarra.dev.java.net/mojarra_ext" -->
-
-
 <head>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
@@ -31,45 +23,66 @@
 
     <title>PlantsPlants</title>
 </head>
+
+
 <body>
-<h1>Welcome to PlantsPlants!</h1>
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">Welcome to PlantsPlants!</a>
+    <form action="#" class="form-inline" method="POST" th:action="@{/searchspecimen}">
+        <input aria-label="Search" class="form-control mr-sm-2" name="searchTerm" placeholder="Search" type="search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+<br/>
+
 <p>Your specimen is: &nbsp"<label th:text="${specimenDTO}"/>"</p>
 <p><label th:text="${specimenDTO}"/></p>
 
 <form action="#" method="POST" th:action="@{/savespecimen}" th:object="${specimenDTO}">
-    <label>Latitude: </label><input name="latitude" th:field="*{latitude}" type="text"/><br/>
-    <label>Longitude: </label><input name="longitude" th:field="*{longitude}" type="text"/><br/>
-    <label>Description: </label><input name="description" th:field="*{description}" type="text"/><br/>
-    <label>Plant: </label><input name="plantId" th:field="*{plantId}" type="text"/><br/>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Latitude</span>
+        </div>
+        <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="latitude"
+               th:field="*{latitude}"
+               type="text">
+    </div>
+
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Longitude</span>
+        </div>
+        <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="longitude"
+               th:field="*{longitude}"
+               type="text">
+    </div>
+
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Description</span>
+        </div>
+        <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="description"
+               th:field="*{description}"
+               type="text">
+    </div>
+
+
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Plant</span>
+        </div>
+        <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="plantId"
+               th:field="*{plantId}"
+               type="text">
+    </div>
+
 
     <button name="submit" type="submit" value="0">Submit</button>
 
 </form>
-
-
-<form action="#" method="POST" th:action="@{/searchspecimen}">
-
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">Search Term</span>
-        </div>
-        <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input" class="form-control"
-               name="searchTerm">
-    </div>
-
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-default">Second Search Term</span>
-        </div>
-        <input aria-describedby="inputGroup-sizing-default" aria-label="Sizing example input" class="form-control"
-               name="secondSearchTerm">
-    </div>
-
-    <input aria-pressed="true" class="btn btn-secondary btn-lg active" role="button" type="submit"/>
-
-
-</form>
-
-
 </body>
 </html>
