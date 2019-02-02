@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -26,16 +26,8 @@
 
 
 <body>
-<!-- As a link -->
-<nav class="navbar navbar-light bg-light justify-content-between">
-    <a class="navbar-brand">Welcome to PlantsPlants!</a>
-    <form action="#" class="form-inline" method="POST" th:action="@{/searchspecimen}">
-        <input aria-label="Search" class="form-control mr-sm-2" name="searchTerm" placeholder="Search" type="search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-</nav>
 
-<br/>
+<div th:replace="fragments/navbars :: top-navbar"/>
 
 <p>Your specimen is: &nbsp"<label th:text="${specimenDTO}"/>"</p>
 <p><label th:text="${specimenDTO}"/></p>

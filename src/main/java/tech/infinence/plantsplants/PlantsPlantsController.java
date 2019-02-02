@@ -57,10 +57,16 @@ public class PlantsPlantsController {
 
 	@GetMapping("/editSpecimen")
 	public String add(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
-		specimenDTO.setLatitude(latitude);
-		model.addAttribute(SPECIMEN_DTO, specimenDTO);
+		SpecimenDTO specimen = iSpecimenService.fetchById(Integer.parseInt(id));
+		specimen.setLatitude(latitude);
+		model.addAttribute(SPECIMEN_DTO, specimen);
 		return "/start";
+	}
+
+	@GetMapping("/report")
+	public String report() {
+
+		return "/report";
 	}
 
 	/**
