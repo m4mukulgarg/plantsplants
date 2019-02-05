@@ -3,25 +3,26 @@ package tech.infinence.plantsplants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 import tech.infinence.plantsplants.service.ISpecimenService;
 
+import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("Spring.SpringCore.Code.FieldInjectionWarnings")
 @Controller //Specify how to respond
 public class PlantsPlantsController {
 	private static final String SPECIMEN_DTO = "specimenDTO";
 	private static final String START = "start";
 	@Autowired
-	private ISpecimenService iSpecimenService;
+	private ISpecimenService specimenService;
 
 	@Autowired
 	SpecimenDTO specimenDTO;
+
 	/**
 	 * Handles /rb endpoint.
 	 *
@@ -31,7 +32,7 @@ public class PlantsPlantsController {
 	@GetMapping("/rb")
 	@ResponseBody
 	public SpecimenDTO rBody(Model model) {
-		specimenDTO = iSpecimenService.fetchById(43);
+		specimenDTO = specimenService.fetchById(43);
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return specimenDTO;
 	}
@@ -47,17 +48,17 @@ public class PlantsPlantsController {
 	 * @param id
 	 * @return
 	 */
-	@PostMapping("/editSpecimen")
+	@PostMapping("/edit-specimen")
 	public String addPost(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		specimenDTO = iSpecimenService.fetchById(Integer.parseInt(id));
+		specimenDTO = specimenService.fetchById(Integer.parseInt(id));
 		specimenDTO.setLatitude(latitude);
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return "/start";
 	}
 
-	@GetMapping("/editSpecimen")
+	@GetMapping("/edit-specimen")
 	public String add(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		SpecimenDTO specimen = iSpecimenService.fetchById(Integer.parseInt(id));
+		SpecimenDTO specimen = specimenService.fetchById(Integer.parseInt(id));
 		specimen.setLatitude(latitude);
 		model.addAttribute(SPECIMEN_DTO, specimen);
 		return "/start";
@@ -74,9 +75,9 @@ public class PlantsPlantsController {
 	 * @return the 'start' page
 	 */
 	@GetMapping("/start")
-    public String read(Model model) {
+	public String read(Model model) {
 
-		specimenDTO = iSpecimenService.fetchById(43);
+		specimenDTO = specimenService.fetchById(43);
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return START;
 	}
@@ -96,7 +97,7 @@ public class PlantsPlantsController {
 	 */
 	@GetMapping(value = "/start", params = {"loyalty=silver"})
 	public ModelAndView readSilver() {
-		specimenDTO = iSpecimenService.fetchById(43);
+		specimenDTO = specimenService.fetchById(43);
 		specimenDTO.setSpecimenId(34);
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName(START);
@@ -123,19 +124,31 @@ public class PlantsPlantsController {
 		return START;
 	}
 
-	@PostMapping("/savespecimen")
+	@PostMapping("/save-specimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
 		specimenDTO.setPlantId(13);
 		return START;
 	}
 
 	@ResponseBody
-	@PostMapping("/searchspecimen")
+	@PostMapping("/search-specimen")
 	public String searchSpecimen(@RequestParam(value = "searchTerm", required = false) String searchTerm, @RequestParam Map paramMap) {
 
 		return "First term: " + searchTerm + "<br/>" +
 				"Map:<br/>" +
 				paramMap;
+	}
+
+	@RequestMapping("/search-plants")
+	public String searchPlants(@RequestParam(value = "searchTerm", required = false, defaultValue = "") String searchTerm) {
+		String enhancedSearchTerm = searchTerm + "";
+		try {
+			List<PlantDTO> fetchPlants = specimenService.fetchPlants(searchTerm);
+		} catch (Exception ioe) {
+			ioe.printStackTrace();
+			return "error";
+		}
+		return START;
 	}
 
 	/**

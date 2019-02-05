@@ -2,6 +2,8 @@ package tech.infinence.plantsplants.dto;
 
 import org.springframework.stereotype.Component;
 
+import java.util.Objects;
+
 @Component
 public class SpecimenDTO {
 	@Override
@@ -9,7 +11,15 @@ public class SpecimenDTO {
 		if (this == o) return true;
 		if (!(o instanceof SpecimenDTO)) return false;
 		SpecimenDTO that = (SpecimenDTO) o;
-		return getPlantId() == that.getPlantId();
+		return getSpecimenId() == that.getSpecimenId();
+	}
+
+	/**
+	 * @return
+	 */
+	@Override
+	public int hashCode() {
+		return Objects.hash(getSpecimenId(), getLatitude(), getLongitude());
 	}
 
 	/**

@@ -5,6 +5,7 @@ import tech.infinence.plantsplants.dao.ISpecimenDAO;
 import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,16 +41,15 @@ public class SpecimenServiceStub implements ISpecimenService {
 	 * @throws Exception
 	 */
 	@Override
-	public boolean save(SpecimenDTO specimenDTO) throws Exception {
-		boolean res = specimenDAO.save(specimenDTO);
-		return res;
+	public boolean save(SpecimenDTO specimenDTO) throws IOException {
+		return specimenDAO.save(specimenDTO);
 	}
 
 	@Override
 	public List<PlantDTO> fetchPlants(String searchTerm) {
 
 		//Stub out a plant fetch mechanism
-		List<PlantDTO> matchingPlants = new ArrayList<PlantDTO>();
+		List<PlantDTO> matchingPlants = new ArrayList<>();
 
 		if (searchTerm.contains("edbud") || searchTerm.contains("Cercis")) {
 			PlantDTO plant = new PlantDTO();

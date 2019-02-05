@@ -1,5 +1,6 @@
 package tech.infinence.plantsplants;
 
+import org.json.JSONException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +14,7 @@ import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 import tech.infinence.plantsplants.service.ISpecimenService;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,14 +43,14 @@ public class SpecimenServiceTest {
 	}
 
 	@Test
-	public void fetchPlants_validateNoResultsForJunkData() {
+	public void fetchPlants_validateNoResultsForJunkData() throws IOException, JSONException {
 		givenUserIsLoggedInToMyPlantDiary();
 		whenTheUserSearchesForJunk();
 		thenMyPlantDiaryReturnsZeroResults();
 	}
 
 	@Test
-	public void fetchPlants_validateNoResultsForCercis() {
+	public void fetchPlants_validateNoResultsForCercis() throws IOException, JSONException {
 		givenUserIsLoggedInToMyPlantDiary();
 		whenTheUserSearchesForCercis();
 		thenMyPlantDiaryReturnsEasternRedbud();
@@ -65,20 +67,20 @@ public class SpecimenServiceTest {
 		assertTrue(redbudFound);
 	}
 
-	private void whenTheUserSearchesForCercis() {
+	private void whenTheUserSearchesForCercis() throws IOException, JSONException {
 		// Auto-generated method stub
 		plants = specimenService.fetchPlants("Eastern Redbud");
 	}
 
 	@Test
-	public void saveSpecimen_whenRedbudEntered() {
+	public void saveSpecimen_whenRedbudEntered() throws IOException, JSONException {
 		givenUserIsLoggedInToMyPlantDiary();
 		whenUserSearchesForEasternRedbud();
 		whenUserAddsTextDetails();
 		thenSpecimenIsSaved();
 	}
 
-	private void whenUserSearchesForEasternRedbud() {
+	private void whenUserSearchesForEasternRedbud() throws IOException, JSONException {
 
 		plants = specimenService.fetchPlants("Eastern Redbud");
 
@@ -106,7 +108,7 @@ public class SpecimenServiceTest {
 	private void givenUserIsLoggedInToMyPlantDiary() {
 	}
 
-	private void whenTheUserSearchesForJunk() {
+	private void whenTheUserSearchesForJunk() throws IOException, JSONException {
 
 		plants = specimenService.fetchPlants("kdlahkshlakh;LSDK;AFLSD;A");
 
