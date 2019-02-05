@@ -1,6 +1,5 @@
 package tech.infinence.plantsplants.service;
 
-import org.json.JSONException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import tech.infinence.plantsplants.dao.IPlantDAO;
@@ -38,7 +37,7 @@ public class SpecimenService implements ISpecimenService {
 	}
 
 	@Override
-	public List<PlantDTO> fetchPlants(String searchTerm) throws IOException, JSONException {
-		return plantDAO.fetch("Oak");
+	public List<PlantDTO> fetchPlants(String searchTerm) throws IOException {
+		return plantDAO.fetch("Maple"/*searchTerm*/);
 	}
 }

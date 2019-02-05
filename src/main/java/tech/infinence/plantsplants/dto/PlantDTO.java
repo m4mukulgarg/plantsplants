@@ -1,10 +1,23 @@
 package tech.infinence.plantsplants.dto;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class PlantDTO {
+	@SerializedName("id")
+	@Expose
 	private int guid;
+	@SerializedName("genus")
+	@Expose
 	private String genus;
+	@SerializedName("species")
+	@Expose
 	private String species;
+	@SerializedName("cultivar")
+	@Expose
 	private String cultivar;
+	@SerializedName("common")
+	@Expose
 	private String common;
 
 	public int getGuid() {

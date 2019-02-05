@@ -141,10 +141,10 @@ public class PlantsPlantsController {
 
 	@RequestMapping("/search-plants")
 	public String searchPlants(@RequestParam(value = "searchTerm", required = false, defaultValue = "") String searchTerm) {
-		String enhancedSearchTerm = searchTerm + "";
 		try {
 			List<PlantDTO> fetchPlants = specimenService.fetchPlants(searchTerm);
 		} catch (Exception ioe) {
+			//TODO log exception
 			ioe.printStackTrace();
 			return "error";
 		}

@@ -1,6 +1,5 @@
 package tech.infinence.plantsplants.service;
 
-import org.json.JSONException;
 import tech.infinence.plantsplants.dao.ISpecimenDAO;
 import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
@@ -23,5 +22,5 @@ public interface ISpecimenService {
 
 	boolean save(SpecimenDTO specimenDTO) throws IOException;
 
-	List<PlantDTO> fetchPlants(String searchTerm) throws IOException, JSONException;
+	List<PlantDTO> fetchPlants(String searchTerm) throws IOException;
 }
