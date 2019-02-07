@@ -7,5 +7,5 @@ import tech.infinence.plantsplants.dto.PlantList;
 
 public interface GetPlants {
 	@GET("/perl/mobile/viewplantsjson.pl")
-	Call<PlantList> getAllPlants(@Query("?Combined_Name") String combinedName);
+	Call<PlantList> getAllPlants(@Query("Combined_Name") String combinedName);
 }

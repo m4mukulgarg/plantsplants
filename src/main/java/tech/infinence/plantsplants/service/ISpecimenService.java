@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  * CRUD operations for specimens
- *
  * @author @m4mukulgarg
  */
 public interface ISpecimenService {

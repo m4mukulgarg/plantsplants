@@ -4,11 +4,6 @@
 <head>
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
-    <!-- <h:outputStylesheet library="css" name="default.css" />
-    <h:link rel="stylesheet" href="css/default.css" type="text/css" />
-    <h:outputStylesheet library="css" name="cssLayout.css" />
-    <link rel="stylesheet" media="screen" href="css/styles.css" type="text/css" />
-    <link rel="stylesheet" media="(max-width:800px),print" href="css/print.css" type="text/css" /> -->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">
     <script crossorigin="anonymous"
@@ -32,7 +27,7 @@
 <p>Your specimen is: &nbsp"<label th:text="${specimenDTO}"/>"</p>
 <p><label th:text="${specimenDTO}"/></p>
 
-<form action="#" method="POST" th:action="@{/savespecimen}" th:object="${specimenDTO}">
+<form action="#" method="POST" th:action="@{/save-specimen}" th:object="${specimenDTO}">
     <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-sm">Latitude</span>

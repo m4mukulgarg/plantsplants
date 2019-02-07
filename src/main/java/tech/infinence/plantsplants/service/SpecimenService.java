@@ -38,6 +38,6 @@ public class SpecimenService implements ISpecimenService {
 
 	@Override
 	public List<PlantDTO> fetchPlants(String searchTerm) throws IOException {
-		return plantDAO.fetch("Maple"/*searchTerm*/);
+		return plantDAO.fetch(searchTerm);
 	}
 }

@@ -9,6 +9,7 @@ import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 import tech.infinence.plantsplants.service.ISpecimenService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -21,7 +22,7 @@ public class PlantsPlantsController {
 	private ISpecimenService specimenService;
 
 	@Autowired
-	SpecimenDTO specimenDTO;
+	private SpecimenDTO specimenDTO;
 
 	/**
 	 * Handles /rb endpoint.
@@ -32,7 +33,7 @@ public class PlantsPlantsController {
 	@GetMapping("/rb")
 	@ResponseBody
 	public SpecimenDTO rBody(Model model) {
-		specimenDTO = specimenService.fetchById(43);
+		//
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return specimenDTO;
 	}
@@ -77,7 +78,7 @@ public class PlantsPlantsController {
 	@GetMapping("/start")
 	public String read(Model model) {
 
-		specimenDTO = specimenService.fetchById(43);
+
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return START;
 	}
@@ -97,7 +98,7 @@ public class PlantsPlantsController {
 	 */
 	@GetMapping(value = "/start", params = {"loyalty=silver"})
 	public ModelAndView readSilver() {
-		specimenDTO = specimenService.fetchById(43);
+
 		specimenDTO.setSpecimenId(34);
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName(START);
@@ -140,15 +141,22 @@ public class PlantsPlantsController {
 	}
 
 	@RequestMapping("/search-plants")
-	public String searchPlants(@RequestParam(value = "searchTerm", required = false, defaultValue = "") String searchTerm) {
+	public ModelAndView searchPlants(@RequestParam(value = "searchTerm", required = false, defaultValue = "") String searchTerm) {
+		String enhancedTerm = searchTerm + "";
+		List<PlantDTO> plants = new ArrayList<>();
+		ModelAndView modelAndView = new ModelAndView();
 		try {
-			List<PlantDTO> fetchPlants = specimenService.fetchPlants(searchTerm);
+			plants = specimenService.fetchPlants(searchTerm);
+			modelAndView.setViewName("plant-results");
+
 		} catch (Exception ioe) {
-			//TODO log exception
-			ioe.printStackTrace();
-			return "error";
+
+			modelAndView.setViewName("error");
 		}
-		return START;
+
+		modelAndView.addObject("plants", plants);
+
+		return modelAndView;
 	}
 
 	/**
@@ -156,7 +164,8 @@ public class PlantsPlantsController {
 	 * @return the 'start' page
 	 */
 	@GetMapping("/")
-	public String index() {
-		return "start.html";
+	public String index(Model model) {
+		model.addAttribute(SPECIMEN_DTO, specimenDTO);
+		return START;
 	}
 }

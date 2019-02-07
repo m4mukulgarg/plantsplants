@@ -59,4 +59,15 @@ public class PlantDTO {
 	public void setCommon(String common) {
 		this.common = common;
 	}
+
+	@Override
+	public String toString() {
+		return "PlantDTO{" +
+				"guid=" + guid +
+				", genus='" + genus + '\'' +
+				", species='" + species + '\'' +
+				", cultivar='" + cultivar + '\'' +
+				", common='" + common + '\'' +
+				'}';
+	}
 }

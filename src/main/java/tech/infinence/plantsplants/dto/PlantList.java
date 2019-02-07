@@ -9,7 +9,6 @@ public class PlantList {
 	@SerializedName("plants")
 	@Expose
 	private List<PlantDTO> plants = null;
-
 	public List<PlantDTO> getPlants() {
 		return plants;
 	}

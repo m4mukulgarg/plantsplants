@@ -10,6 +10,7 @@ import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.PlantList;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -29,8 +30,10 @@ public class PlantDAO implements IPlantDAO {
 		Call<PlantList> allPlants = getPlants.getAllPlants(searchFilter);
 		Response<PlantList> execute = allPlants.execute();
 		PlantList plantList = execute.body();
-
-		return plantList.getPlants();
+		List<PlantDTO> plantDTOList = plantList.getPlants();
+		if (null == plantDTOList)
+			return new ArrayList<>();
+		return plantDTOList;
 	}
 
 }

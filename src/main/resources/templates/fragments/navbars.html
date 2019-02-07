@@ -1,4 +1,4 @@
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <div th:fragment="top-navbar">
     <nav class="navbar navbar-light bg-light navbar-expand-lg justify-content-between">
         <a class="navbar-brand">Greetings from PlantsPlants!</a>
@@ -12,7 +12,7 @@
                 </li>
             </ul>
         </div>
-        <form action="#" class="form-inline" method="POST" th:action="@{/searchspecimen}">
+        <form action="#" class="form-inline" method="POST" th:action="@{/search-plants}">
             <input aria-label="Search" class="form-control mr-sm-2" name="searchTerm" placeholder="Search"
                    type="search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
