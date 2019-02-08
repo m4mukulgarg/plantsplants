@@ -50,7 +50,7 @@ public class SpecimenDTO {
 		this.plantId = plantId;
 	}
 
-	public int getSpecimenId() {
+	private int getSpecimenId() {
 		return specimenId;
 	}
 
@@ -58,7 +58,7 @@ public class SpecimenDTO {
 		this.specimenId = specimenId;
 	}
 
-	public String getLatitude() {
+	private String getLatitude() {
 		return latitude;
 	}
 
@@ -66,7 +66,7 @@ public class SpecimenDTO {
 		this.latitude = latitude;
 	}
 
-	public String getLongitude() {
+	private String getLongitude() {
 		return longitude;
 	}
 

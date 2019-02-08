@@ -17,7 +17,7 @@ public interface ISpecimenService {
 
 	void setSpecimenDAO(ISpecimenDAO specimenDAO);
 
-	SpecimenDTO fetchById(int id);
+	SpecimenDTO fetchById();
 
 	boolean save(SpecimenDTO specimenDTO) throws IOException;
 

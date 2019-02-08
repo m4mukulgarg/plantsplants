@@ -30,7 +30,7 @@
 <form action="#" method="POST" th:action="@{/save-specimen}" th:object="${specimenDTO}">
     <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Latitude</span>
+            <span class="input-group-text" id="latitude">Latitude</span>
         </div>
         <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="latitude"
                th:field="*{latitude}"
@@ -40,7 +40,7 @@
 
     <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Longitude</span>
+            <span class="input-group-text" id="longitude">Longitude</span>
         </div>
         <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="longitude"
                th:field="*{longitude}"
@@ -50,7 +50,7 @@
 
     <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Description</span>
+            <span class="input-group-text" id="description">Description</span>
         </div>
         <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="description"
                th:field="*{description}"
@@ -60,7 +60,7 @@
 
     <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Plant</span>
+            <span class="input-group-text" id="PlantID">Plant</span>
         </div>
         <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="plantId"
                th:field="*{plantId}"

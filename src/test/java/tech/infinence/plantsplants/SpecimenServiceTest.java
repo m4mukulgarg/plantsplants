@@ -32,7 +32,7 @@ public class SpecimenServiceTest {
 
 	@Autowired
 	SpecimenDTO specimen;
-	List<PlantDTO> plants = new ArrayList<PlantDTO>();
+	private List<PlantDTO> plants = new ArrayList<PlantDTO>();
 
 	@Before
 	public void setup() throws Exception {
@@ -105,6 +105,7 @@ public class SpecimenServiceTest {
 		}
 	}
 
+	@SuppressWarnings("EmptyMethod")
 	private void givenUserIsLoggedInToMyPlantDiary() {
 	}
 

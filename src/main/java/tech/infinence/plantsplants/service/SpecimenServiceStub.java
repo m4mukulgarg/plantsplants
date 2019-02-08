@@ -26,7 +26,7 @@ public class SpecimenServiceStub implements ISpecimenService {
 	}
 
 	@Override
-	public SpecimenDTO fetchById(int id) {
+	public SpecimenDTO fetchById() {
 		SpecimenDTO specimenDTO = new SpecimenDTO();
 		specimenDTO.setSpecimenId(43);
 		specimenDTO.setLatitude("39.74");

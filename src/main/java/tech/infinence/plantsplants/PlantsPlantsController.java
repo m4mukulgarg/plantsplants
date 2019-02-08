@@ -1,5 +1,7 @@
 package tech.infinence.plantsplants;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,9 +15,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-@SuppressWarnings("Spring.SpringCore.Code.FieldInjectionWarnings")
+@SuppressWarnings({"Spring.SpringCore.Code.FieldInjectionWarnings", "SameReturnValue"})
 @Controller //Specify how to respond
 public class PlantsPlantsController {
+	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	private static final String SPECIMEN_DTO = "specimenDTO";
 	private static final String START = "start";
 	@Autowired
@@ -27,7 +30,7 @@ public class PlantsPlantsController {
 	/**
 	 * Handles /rb endpoint.
 	 *
-	 * @param model
+	 * @param model for SpecimenDTO object
 	 * @return specimenDTO in JSON
 	 */
 	@GetMapping("/rb")
@@ -44,14 +47,14 @@ public class PlantsPlantsController {
 	 * required = true/false (true by default)
 	 * defaultValue = "" (String value)
 	 *
-	 * @param model
-	 * @param latitude
-	 * @param id
-	 * @return
+	 * @param model for SpecimenDTO object
+	 * @param latitude latitude of the specimen
+	 * @param id specimen-id
+	 * @return start.html
 	 */
 	@PostMapping("/edit-specimen")
 	public String addPost(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		specimenDTO = specimenService.fetchById(Integer.parseInt(id));
+		specimenDTO = specimenService.fetchById();
 		specimenDTO.setLatitude(latitude);
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return "/start";
@@ -59,7 +62,7 @@ public class PlantsPlantsController {
 
 	@GetMapping("/edit-specimen")
 	public String add(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		SpecimenDTO specimen = specimenService.fetchById(Integer.parseInt(id));
+		SpecimenDTO specimen = specimenService.fetchById();
 		specimen.setLatitude(latitude);
 		model.addAttribute(SPECIMEN_DTO, specimen);
 		return "/start";
@@ -78,7 +81,7 @@ public class PlantsPlantsController {
 	@GetMapping("/start")
 	public String read(Model model) {
 
-
+		log.info("User has entered the /start endpoint");
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return START;
 	}
@@ -119,11 +122,7 @@ public class PlantsPlantsController {
 	 * Handles the /start endpoint
 	 * @return the 'start' page
 	 */
-	@PostMapping("/start")
-	public String create(Model model) {
-		model.addAttribute(SPECIMEN_DTO, specimenDTO);
-		return START;
-	}
+
 
 	@PostMapping("/save-specimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
@@ -142,23 +141,31 @@ public class PlantsPlantsController {
 
 	@RequestMapping("/search-plants")
 	public ModelAndView searchPlants(@RequestParam(value = "searchTerm", required = false, defaultValue = "") String searchTerm) {
-		String enhancedTerm = searchTerm + "";
+		log.debug("entering search plants");
+
 		List<PlantDTO> plants = new ArrayList<>();
 		ModelAndView modelAndView = new ModelAndView();
 		try {
-			plants = specimenService.fetchPlants(searchTerm);
+			plants = specimenService.fetchPlants(searchTerm + "");
 			modelAndView.setViewName("plant-results");
+			String msg = "Received 0 results for search string:"+searchTerm;
+			if (plants.isEmpty()) log.warn(msg);
 
 		} catch (Exception ioe) {
-
+			log.error("Error happened in searchPlants endpoint", ioe);
 			modelAndView.setViewName("error");
 		}
 
 		modelAndView.addObject("plants", plants);
+		log.debug("exiting search Plants");
 
 		return modelAndView;
 	}
 
+	@PostMapping("/start")
+	public void create(Model model) {
+		index(model);
+	}
 	/**
 	 * Handles the / endpoint
 	 * @return the 'start' page

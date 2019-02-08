@@ -23,16 +23,16 @@ public class SpecimenService implements ISpecimenService {
 
 	@Override
 	public void setSpecimenDAO(ISpecimenDAO specimenDAO) {
-		//TODO
+		//not needed
 	}
 
 	@Override
-	public SpecimenDTO fetchById(int id) {
+	public SpecimenDTO fetchById() {
 		return null;
 	}
 
 	@Override
-	public boolean save(SpecimenDTO specimenDTO) throws IOException {
+	public boolean save(SpecimenDTO specimenDTO) {
 		return false;
 	}
 
