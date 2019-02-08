@@ -11,6 +11,7 @@ import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 import tech.infinence.plantsplants.service.ISpecimenService;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -21,6 +22,7 @@ public class PlantsPlantsController {
 	private final Logger log = LoggerFactory.getLogger(this.getClass());
 	private static final String SPECIMEN_DTO = "specimenDTO";
 	private static final String START = "start";
+	private static final String ERROR = "error";
 	@Autowired
 	private ISpecimenService specimenService;
 
@@ -54,7 +56,7 @@ public class PlantsPlantsController {
 	 */
 	@PostMapping("/edit-specimen")
 	public String addPost(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		specimenDTO = specimenService.fetchById();
+		specimenDTO = specimenService.fetchById(83);
 		specimenDTO.setLatitude(latitude);
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return "/start";
@@ -62,7 +64,7 @@ public class PlantsPlantsController {
 
 	@GetMapping("/edit-specimen")
 	public String add(Model model, @RequestParam(value = "latitude") String latitude, @RequestParam(value = "id") String id) {
-		SpecimenDTO specimen = specimenService.fetchById();
+		SpecimenDTO specimen = specimenService.fetchById(83);
 		specimen.setLatitude(latitude);
 		model.addAttribute(SPECIMEN_DTO, specimen);
 		return "/start";
@@ -126,7 +128,18 @@ public class PlantsPlantsController {
 
 	@PostMapping("/save-specimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
-		specimenDTO.setPlantId(13);
+		specimenDTO.setDescription("A bootiful specimen");
+		specimenDTO.setPlantId(83);
+		specimenDTO.setLongitude("39.74");
+		specimenDTO.setLatitude("-84.51");
+		try {
+			specimenService.save(specimenDTO);
+			String m = "Saved specimen: " + specimenDTO;
+			log.trace(m);
+		} catch (IOException e) {
+			log.error("Unable to save specimen", e);
+			return ERROR;
+		}
 		return START;
 	}
 
@@ -153,7 +166,7 @@ public class PlantsPlantsController {
 
 		} catch (Exception ioe) {
 			log.error("Error happened in searchPlants endpoint", ioe);
-			modelAndView.setViewName("error");
+			modelAndView.setViewName(ERROR);
 		}
 
 		modelAndView.addObject("plants", plants);

@@ -16,6 +16,9 @@ public class SpecimenService implements ISpecimenService {
 	@Autowired
 	IPlantDAO plantDAO;
 
+	@Autowired
+	ISpecimenDAO specimenDAO;
+
 	@Override
 	public ISpecimenDAO getSpecimenDAO() {
 		return null;
@@ -27,12 +30,14 @@ public class SpecimenService implements ISpecimenService {
 	}
 
 	@Override
-	public SpecimenDTO fetchById() {
+	public SpecimenDTO fetchById(int id) {
 		return null;
 	}
 
 	@Override
 	public boolean save(SpecimenDTO specimenDTO) {
+		specimenDAO.save(specimenDTO);
+
 		return false;
 	}
 

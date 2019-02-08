@@ -5,7 +5,6 @@ import tech.infinence.plantsplants.dao.ISpecimenDAO;
 import tech.infinence.plantsplants.dto.PlantDTO;
 import tech.infinence.plantsplants.dto.SpecimenDTO;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +25,7 @@ public class SpecimenServiceStub implements ISpecimenService {
 	}
 
 	@Override
-	public SpecimenDTO fetchById() {
+	public SpecimenDTO fetchById(int id) {
 		SpecimenDTO specimenDTO = new SpecimenDTO();
 		specimenDTO.setSpecimenId(43);
 		specimenDTO.setLatitude("39.74");
@@ -38,10 +37,9 @@ public class SpecimenServiceStub implements ISpecimenService {
 	/**
 	 * @param specimenDTO
 	 * @return
-	 * @throws Exception
 	 */
 	@Override
-	public boolean save(SpecimenDTO specimenDTO) throws IOException {
+	public boolean save(SpecimenDTO specimenDTO) {
 		return specimenDAO.save(specimenDTO);
 	}
 
