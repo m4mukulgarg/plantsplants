@@ -128,10 +128,6 @@ public class PlantsPlantsController {
 
 	@PostMapping("/save-specimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
-		specimenDTO.setDescription("A bootiful specimen");
-		specimenDTO.setPlantId(83);
-		specimenDTO.setLongitude("39.74");
-		specimenDTO.setLatitude("-84.51");
 		try {
 			specimenService.save(specimenDTO);
 			String m = "Saved specimen: " + specimenDTO;

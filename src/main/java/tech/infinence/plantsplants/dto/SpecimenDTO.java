@@ -2,13 +2,14 @@ package tech.infinence.plantsplants.dto;
 
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
+@Table(name = "specimen")
 @Component
 public class SpecimenDTO {
 	@Override
@@ -27,6 +28,26 @@ public class SpecimenDTO {
 		return Objects.hash(getSpecimenId(), getLatitude(), getLongitude());
 	}
 
+	@Id
+	@Column(name = "SPECIMEN_ID")
+	private int specimenId;
+
+	@Column(name = "LATITUDE")
+	private String latitude;
+
+	@Column(name = "LONGITUDE")
+	private String longitude;
+
+	@Column(name = "DESCRIPTION")
+	private String description;
+
+	@Column(name = "PLANT_ID")
+	private int plantId;
+
+	@Column(name = "PLANT_NAME")
+	private String plantName;
+
+
 	/**
 	 * @return
 	 */
@@ -38,16 +59,17 @@ public class SpecimenDTO {
 				", longitude='" + longitude + '\'' +
 				", description='" + description + '\'' +
 				", plantId=" + plantId +
+				", plantName='" + plantName + '\'' +
 				'}';
 	}
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int specimenId;
-	private String latitude;
-	private String longitude;
-	private String description;
-	private int plantId;
+	public String getPlantName() {
+		return plantName;
+	}
+
+	public void setPlantName(String plantName) {
+		this.plantName = plantName;
+	}
 
 	public int getPlantId() {
 		return plantId;

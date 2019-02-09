@@ -1,45 +1,11 @@
-2019-02-09 04:55:05,479 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on CONSOLE with PID 7152 (started by the_professor in H:\projects\plantsplants)
-2019-02-09 04:55:05,483 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 04:55:05,486 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 04:55:12,507 INFO org.springframework.boot.StartupInfoLogger [main] Started SpecimenServiceTest in 7.645 seconds (JVM running for 9.063)
-2019-02-09 04:57:12,456 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on CONSOLE with PID 5292 (started by the_professor in H:\projects\plantsplants)
-2019-02-09 04:57:12,460 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 04:57:12,462 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 04:57:19,451 INFO org.springframework.boot.StartupInfoLogger [main] Started SpecimenServiceTest in 7.733 seconds (JVM running for 9.37)
-2019-02-09 05:01:39,866 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on CONSOLE with PID 10248 (started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:01:39,868 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:01:39,870 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:01:46,261 INFO org.springframework.boot.StartupInfoLogger [main] Started SpecimenServiceTest in 7.093 seconds (JVM running for 8.297)
-2019-02-09 05:02:31,812 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on CONSOLE with PID 14140 (started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:02:31,813 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:02:31,816 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:02:38,523 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplicationTests in 7.453 seconds (JVM running for 9.014)
-2019-02-09 05:02:38,659 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on CONSOLE with PID 14140 (started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:02:38,659 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:02:38,660 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:02:40,030 INFO org.springframework.boot.StartupInfoLogger [main] Started SpecimenServiceTest in 1.404 seconds (JVM running for 10.521)
-2019-02-09 05:08:00,396 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on CONSOLE with PID 14800 (started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:08:00,399 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:08:00,401 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:08:06,344 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplicationTests in 6.737 seconds (JVM running for 7.892)
-2019-02-09 05:08:06,484 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on CONSOLE with PID 14800 (started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:08:06,484 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:08:06,485 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:08:08,098 INFO org.springframework.boot.StartupInfoLogger [main] Started SpecimenServiceTest in 1.641 seconds (JVM running for 9.646)
-2019-02-09 05:09:00,097 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 6728 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:09:00,102 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:09:00,104 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:09:06,801 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 7.719 seconds (JVM running for 8.602)
-2019-02-09 05:25:30,876 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 15224 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:25:30,879 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:25:30,880 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:25:35,726 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 5.463 seconds (JVM running for 6.422)
-2019-02-09 05:25:51,215 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-1] User has entered the /start endpoint
-2019-02-09 05:27:43,838 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 952 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:27:43,841 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:27:43,843 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:28:57,158 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 4284 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
-2019-02-09 05:28:57,163 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
-2019-02-09 05:28:57,164 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
-2019-02-09 05:29:02,642 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 5.91 seconds (JVM running for 7.145)
-2019-02-09 05:29:48,593 TRACE tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-3] Saved specimen: SpecimenDTO{specimenId=1, latitude='-84.51', longitude='39.74', description='A bootiful specimen', plantId=83}
+2019-02-10 01:19:43,172 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 14988 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 01:19:43,178 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 01:19:43,180 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 01:19:48,949 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 6.43 seconds (JVM running for 7.878)
+2019-02-10 01:23:42,697 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 12400 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 01:23:42,702 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 01:23:42,704 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 01:23:48,185 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 6.212 seconds (JVM running for 7.614)
+2019-02-10 01:24:37,395 TRACE tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-5] Saved specimen: SpecimenDTO{specimenId=0, latitude='28.40', longitude='77.10', description='A bootiful Eastern Redbud spechi-hen', plantId=83, plantName='Eastern Redbud'}
+2019-02-10 01:28:17,705 TRACE tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-9] Saved specimen: SpecimenDTO{specimenId=0, latitude='28.40', longitude='77.10', description='Another beautiful fall color', plantId=83, plantName='Cercis Candensis Eastern Redbud'}
+2019-02-10 01:28:45,684 TRACE tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-2] Saved specimen: SpecimenDTO{specimenId=0, latitude='28.40', longitude='77.10', description='Yet another beautiful fall color', plantId=83, plantName='Cercis Candensis Eastern Redbud'}
