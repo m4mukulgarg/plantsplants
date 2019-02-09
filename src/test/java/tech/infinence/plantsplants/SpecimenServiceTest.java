@@ -32,7 +32,7 @@ public class SpecimenServiceTest {
 
 	@Autowired
 	SpecimenDTO specimen;
-	private List<PlantDTO> plants = new ArrayList<PlantDTO>();
+	List<PlantDTO> plants = new ArrayList<PlantDTO>();
 
 	@Before
 	public void setup() throws Exception {

@@ -8,8 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Objects;
 
-@Component
 @Entity
+@Component
 public class SpecimenDTO {
 	@Override
 	public boolean equals(Object o) {
@@ -57,7 +57,7 @@ public class SpecimenDTO {
 		this.plantId = plantId;
 	}
 
-	private int getSpecimenId() {
+	public int getSpecimenId() {
 		return specimenId;
 	}
 
@@ -65,7 +65,7 @@ public class SpecimenDTO {
 		this.specimenId = specimenId;
 	}
 
-	private String getLatitude() {
+	public String getLatitude() {
 		return latitude;
 	}
 
@@ -73,7 +73,7 @@ public class SpecimenDTO {
 		this.latitude = latitude;
 	}
 
-	private String getLongitude() {
+	public String getLongitude() {
 		return longitude;
 	}
 
