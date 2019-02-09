@@ -1,0 +1,15 @@
+2019-02-08 23:24:32,928 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 14976 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-08 23:24:32,932 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-08 23:24:32,935 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-08 23:24:39,633 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 7.765 seconds (JVM running for 9.366)
+2019-02-08 23:25:05,198 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-1] entering search plants
+2019-02-08 23:25:14,274 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-1] exiting search Plants
+2019-02-08 23:25:14,822 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-2] User has entered the /start endpoint
+2019-02-08 23:25:20,516 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-4] entering search plants
+2019-02-08 23:25:22,578 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-4] exiting search Plants
+2019-02-08 23:25:29,791 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-5] entering search plants
+2019-02-08 23:25:32,164 WARN tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-5] Received 0 results for search string: 
+2019-02-08 23:25:32,165 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-5] exiting search Plants
+2019-02-08 23:26:18,225 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 7388 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-08 23:26:18,227 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-08 23:26:18,231 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
