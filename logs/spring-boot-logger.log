@@ -42,3 +42,37 @@
 2019-02-10 20:34:01,089 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
 2019-02-10 20:34:01,090 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-02-10 20:35:18,292 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 88.523 seconds (JVM running for 108.457)
+2019-02-10 21:34:04,147 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 15640 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 21:34:04,154 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 21:34:04,156 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 21:34:09,977 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 6.64 seconds (JVM running for 8.241)
+2019-02-10 21:34:18,823 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-1] User has entered the /start endpoint
+2019-02-10 21:34:25,653 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-3] entering search plants
+2019-02-10 21:34:29,683 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-3] exiting search Plants
+2019-02-10 21:35:59,639 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 12548 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 21:35:59,646 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 21:35:59,648 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 21:36:04,991 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 6.027 seconds (JVM running for 7.445)
+2019-02-10 21:36:54,280 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-1] User has entered the /start endpoint
+2019-02-10 21:39:27,892 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 3648 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 21:39:27,896 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 21:39:27,897 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 21:39:32,755 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 5.441 seconds (JVM running for 6.957)
+2019-02-10 21:43:33,028 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 8956 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 21:43:33,033 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 21:43:33,034 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 21:43:38,194 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 5.811 seconds (JVM running for 7.263)
+2019-02-10 21:43:48,236 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-3] User has entered the /start endpoint
+2019-02-10 21:44:23,612 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 5692 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 21:44:23,617 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 21:44:23,618 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 21:44:29,256 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 6.316 seconds (JVM running for 7.803)
+2019-02-10 21:44:31,763 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-1] User has entered the /start endpoint
+2019-02-10 21:44:50,245 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on CONSOLE with PID 15788 (H:\projects\plantsplants\target\classes started by the_professor in H:\projects\plantsplants)
+2019-02-10 21:44:50,252 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-02-10 21:44:50,254 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-02-10 21:44:55,582 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 6.06 seconds (JVM running for 6.974)
+2019-02-10 21:45:00,323 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-1] User has entered the /start endpoint
+2019-02-10 21:45:21,792 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-6] entering search plants
+2019-02-10 21:45:25,857 DEBUG tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-6] exiting search Plants
+2019-02-10 21:59:32,224 INFO tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-10] User has entered the /start endpoint
