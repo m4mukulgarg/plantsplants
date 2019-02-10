@@ -184,4 +184,18 @@ public class PlantsPlantsController {
 		model.addAttribute(SPECIMEN_DTO, specimenDTO);
 		return START;
 	}
+
+	@GetMapping("/all-plants")
+	public ModelAndView allSpecimen() {
+		ModelAndView modelAndView = new ModelAndView();
+		try {
+			modelAndView.addObject("plants", specimenService.fetchAll());
+			modelAndView.setViewName("all-plants.html");
+		} catch (Exception e) {
+			log.error("Unable to fetchAll from specimen");
+			modelAndView.setViewName(ERROR);
+		}
+		return modelAndView;
+	}
+
 }

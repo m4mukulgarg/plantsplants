@@ -14,4 +14,6 @@ public interface ISpecimenDAO {
 	 * @throws Exception
 	 */
 	boolean save(SpecimenDTO specimenDTO);
+
+	Iterable<SpecimenDTO> fetchAll();
 }

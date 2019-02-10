@@ -41,6 +41,10 @@ public class SpecimenService implements ISpecimenService {
 		return false;
 	}
 
+	public Iterable<SpecimenDTO> fetchAll() {
+		return specimenDAO.fetchAll();
+	}
+
 	@Override
 	public List<PlantDTO> fetchPlants(String searchTerm) throws IOException {
 		return plantDAO.fetch(searchTerm);

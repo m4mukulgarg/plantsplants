@@ -21,4 +21,9 @@ public class SpecimenDAO implements ISpecimenDAO {
 		specimenRepository.save(specimenDTO);
 		return false;
 	}
+
+	@Override
+	public Iterable<SpecimenDTO> fetchAll() {
+		return specimenRepository.findAll();
+	}
 }

@@ -25,6 +25,11 @@ public class SpecimenServiceStub implements ISpecimenService {
 	}
 
 	@Override
+	public Iterable<SpecimenDTO> fetchAll() {
+		return null;
+	}
+
+	@Override
 	public SpecimenDTO fetchById(int id) {
 		SpecimenDTO specimenDTO = new SpecimenDTO();
 		specimenDTO.setSpecimenId(43);
