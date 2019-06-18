@@ -15,7 +15,16 @@
     <script crossorigin="anonymous"
             integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $("#PlantName").autocomplete({
+            source : ["Easter Redbud","Eastern White Pine","Eastern Red Cedar"],
+            minLength : 2
+        });
+    });
 
+
+    </script>
     <title>PlantsPlants</title>
 </head>
 
@@ -68,11 +77,11 @@
     </div>
     <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="PlantName">Plant Name</span>
+            <span class="input-group-text" id="LabelPlantName">Plant Name</span>
         </div>
-        <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" name="plantName"
-               th:field="*{plantName}"
-               type="text">
+        <input aria-describedby="inputGroup-sizing-sm" aria-label="Small" class="form-control" id="PlantName"
+               name="plantName"
+               th:field="*{plantName}" type="text"/>
     </div>
 
 
