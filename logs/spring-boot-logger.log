@@ -24,3 +24,13 @@
 2019-06-19 01:44:05,588 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
 2019-06-19 01:44:09,387 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 4.19 seconds (JVM running for 4.585)
 2019-06-19 01:45:09,563 TRACE tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-4] Saved specimen: SpecimenDTO{specimenId=0, latitude='-23', longitude='25', description='blah', plantId=1234, plantName='blahblahblah'}
+2019-06-19 17:30:03,706 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 9700 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 17:30:03,715 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 17:30:03,716 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 17:34:18,047 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 8888 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 17:34:18,047 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 17:34:18,047 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 17:37:46,872 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 9984 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 17:37:46,875 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 17:37:46,876 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 17:37:51,287 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 4.814 seconds (JVM running for 5.206)
