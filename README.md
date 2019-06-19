@@ -18,4 +18,7 @@ Spring Boot Micro-services Project
     | plant_id    | int(11)      | NO   |     | 0       |       |
     | plant_name  | varchar(45)  | NO   |     | 0       |       |
 
-* Configure URL, username, password in  ``` \plantsplants\src\main\resources\application.properties ```
+* Configure URL, username, password in  
+```
+        \plantsplants\src\main\resources\application.properties
+```
