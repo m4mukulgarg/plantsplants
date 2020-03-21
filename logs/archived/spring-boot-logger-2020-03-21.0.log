@@ -1,0 +1,144 @@
+2019-06-19 01:15:31,744 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 7288 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:15:31,748 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:15:31,749 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:20:10,833 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 9724 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:20:10,836 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:20:10,837 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:26:45,258 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 3296 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:26:45,260 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:26:45,261 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:29:42,733 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 9808 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:29:42,735 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:29:42,736 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:29:57,415 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 4960 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:29:57,417 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:29:57,418 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:30:49,868 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 1508 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:30:49,870 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:30:49,871 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:31:00,615 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 1436 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:31:00,618 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:31:00,619 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:44:05,588 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 11308 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 01:44:05,588 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 01:44:05,588 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 01:44:09,387 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 4.19 seconds (JVM running for 4.585)
+2019-06-19 01:45:09,563 TRACE tech.infinence.plantsplants.PlantsPlantsController [http-nio-8080-exec-4] Saved specimen: SpecimenDTO{specimenId=0, latitude='-23', longitude='25', description='blah', plantId=1234, plantName='blahblahblah'}
+2019-06-19 17:30:03,706 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 9700 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 17:30:03,715 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 17:30:03,716 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 17:34:18,047 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 8888 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 17:34:18,047 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 17:34:18,047 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 17:37:46,872 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplication on SOGOL with PID 9984 (F:\projects\plantsplants\target\classes started by Mukul Garg in F:\projects\plantsplants)
+2019-06-19 17:37:46,875 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2019-06-19 17:37:46,876 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-06-19 17:37:51,287 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantsplantsApplication in 4.814 seconds (JVM running for 5.206)
+2020-03-21 13:18:12,532 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 19236 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:18:12,534 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:18:12,535 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:18:21,439 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 19236 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:18:21,439 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:18:21,440 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:18:28,282 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 19236 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:18:28,282 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:18:28,283 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:18:34,795 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 19236 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:18:34,795 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:18:34,796 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:22:28,133 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 20900 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:22:28,135 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:22:28,136 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:22:36,820 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20900 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:22:36,821 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:22:36,824 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:22:44,019 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20900 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:22:44,019 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:22:44,020 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:22:50,568 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20900 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:22:50,568 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:22:50,569 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:37:19,339 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 18724 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:37:19,341 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:37:19,342 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:37:21,097 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 18724 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:37:21,097 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:37:21,098 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:37:21,967 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 18724 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:37:21,968 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:37:21,969 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:37:22,517 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 18724 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:37:22,517 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:37:22,518 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:43:31,594 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 21688 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:43:31,596 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:43:31,597 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:43:33,584 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 21688 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:43:33,584 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:43:33,585 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:43:34,527 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 21688 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:43:34,530 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:43:34,532 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 13:43:35,067 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 21688 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 13:43:35,067 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 13:43:35,068 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 15:05:07,740 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 23280 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 15:05:07,748 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 15:05:07,749 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 15:05:10,319 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 23280 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 15:05:10,321 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 15:05:10,322 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 15:05:11,794 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 23280 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 15:05:11,795 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 15:05:11,796 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 15:05:12,522 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 23280 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 15:05:12,523 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 15:05:12,524 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:51:41,114 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 20228 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:51:41,126 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:51:41,127 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:51:44,278 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20228 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:51:44,279 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:51:44,280 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:51:45,628 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20228 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:51:45,629 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:51:45,630 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:51:46,391 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20228 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:51:46,392 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:51:46,394 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:59:14,644 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 9772 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:59:14,646 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:59:14,648 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:59:17,359 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 9772 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:59:17,360 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:59:17,361 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:59:18,577 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 9772 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:59:18,578 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:59:18,579 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 22:59:19,407 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 9772 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 22:59:19,408 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 22:59:19,409 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:29:29,361 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 22588 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:29:29,362 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:29:29,364 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:29:33,010 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 22588 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:29:33,011 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:29:33,013 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:29:34,242 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 22588 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:29:34,243 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:29:34,243 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:29:35,054 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 22588 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:29:35,056 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:29:35,058 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:45:48,683 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantsplantsApplicationTests on gurlaptop348 with PID 20392 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:45:48,686 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:45:48,687 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:45:52,692 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20392 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:45:52,692 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:45:52,693 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:45:54,302 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20392 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:45:54,315 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:45:54,321 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-03-21 23:45:55,112 INFO org.springframework.boot.StartupInfoLogger [main] Starting SpecimenServiceTest on gurlaptop348 with PID 20392 (started by mgarg in D:\repos\innovatory\plantsplants)
+2020-03-21 23:45:55,113 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.2.RELEASE, Spring v5.1.4.RELEASE
+2020-03-21 23:45:55,113 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default

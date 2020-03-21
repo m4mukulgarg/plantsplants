@@ -36,7 +36,7 @@
 <p>Your specimen is: &nbsp"<label th:text="${specimenDTO}"/>"</p>
 <p><label th:text="${specimenDTO}"/></p>
 
-<form action="#" method="POST" th:action="@{/save-specimen}" th:object="${specimenDTO}">
+<form action="#" method="post" th:action="@{/save-specimen}" th:object="${specimenDTO}">
     <div class="input-group input-group-sm mb-3">
         <div class="input-group-prepend">
             <span class="input-group-text" id="latitude">Latitude</span>

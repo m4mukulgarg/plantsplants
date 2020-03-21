@@ -35,7 +35,7 @@ public class SpecimenServiceStub implements ISpecimenService {
 		specimenDTO.setSpecimenId(43);
 		specimenDTO.setLatitude("39.74");
 		specimenDTO.setLongitude("-84.51");
-		specimenDTO.setDescription("A bootiful spechimen");
+		specimenDTO.setDescription("A random spechimen");
 		return specimenDTO;
 	}
 

@@ -2,20 +2,30 @@ package tech.infinence.plantsplants.dto;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name = "plants")
 public class PlantDTO {
+	@Id
 	@SerializedName("id")
 	@Expose
 	private int guid;
+
 	@SerializedName("genus")
 	@Expose
 	private String genus;
+
 	@SerializedName("species")
 	@Expose
 	private String species;
+
 	@SerializedName("cultivar")
 	@Expose
 	private String cultivar;
+
 	@SerializedName("common")
 	@Expose
 	private String common;
@@ -62,12 +72,7 @@ public class PlantDTO {
 
 	@Override
 	public String toString() {
-		return "PlantDTO{" +
-				"guid=" + guid +
-				", genus='" + genus + '\'' +
-				", species='" + species + '\'' +
-				", cultivar='" + cultivar + '\'' +
-				", common='" + common + '\'' +
-				'}';
+		return "PlantDTO{" + "guid=" + guid + ", genus='" + genus + '\'' + ", species='" + species + '\''
+				+ ", cultivar='" + cultivar + '\'' + ", common='" + common + '\'' + '}';
 	}
 }
