@@ -41,6 +41,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+workspace/
 
 # External tool builders
 .externalToolBuilders/
