@@ -6,7 +6,7 @@ Spring Boot Micro-services Project
 
 ## Oracle maven dependencies
 1. Sign up for [Oracle SSO](https://www.oracle.com/webapps/maven/register/license.html)
-2. Add the repository definition as following:
+2. Add the repository definition as following (already added in this project's ```pom.xml```):
     ```xml
     <repositories>
         <repository>
@@ -29,7 +29,7 @@ Spring Boot Micro-services Project
     </pluginRepositories>
     ```
 3. Download [wagon-http](https://repo1.maven.org/maven2/org/apache/maven/wagon/wagon-http-shared/2.8/wagon-http-shared-2.8.jar) and place the jar into your ```MAVEN_HOME/lib/ext/``` folder.
-4. Configure HPPT Wagon in your maven ```settings.xml```
+4. Configure HTTP Wagon in your maven ```settings.xml```
 ```xml
     <server>
       <id>maven.oracle.com</id>
@@ -54,7 +54,7 @@ Spring Boot Micro-services Project
       </configuration>
     </server>
 ```
-5. In your default profile, add the repository as following:
+5. In your default profile, add the repository as following (already added in this project's ```pom.xml```):
 ```xml
     <profiles>
         <profile>
